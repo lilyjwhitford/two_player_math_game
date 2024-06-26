@@ -15,6 +15,7 @@ class Game
       @current_player = @player2
     else
       @current_player = @player1
+    end
   end
 
   def play
@@ -41,7 +42,7 @@ class Game
     if @player1.alive?
       puts "player 1 wins with a score of #{@player1.lives}/3"
     else
-      puts "player 2 wins with a scor of #{@player2.lives}/3"
+      puts "player 2 wins with a score of #{@player2.lives}/3"
     end
 
     puts "----- GAME OVER -----"
